@@ -22,7 +22,7 @@ public class ClientSocket {
      */
     public static void main(String[] args) {
         try {
-            Socket clientSocket = new Socket("192.168.178.72", 5000);
+            Socket clientSocket = new Socket("10.1.33.200", 5000);
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             Scanner tastiera = new Scanner(System.in);
